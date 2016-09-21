@@ -14,7 +14,7 @@ class TestConditional(unittest.TestCase):
 	def test_second_test(self):
 		a = "A"
 		b = "B"
-		result = get_winner(a, "apple", b, "banana")
+		result = get_winner(a, 5, b, 3)
 		self.assertEqual(result, a)
 
 #for loop
@@ -25,8 +25,8 @@ class TestForLoop(unittest.TestCase):
 		self.assertEqual(calculate_total(num_list), 13)
 
 	def test_loop2(self):
-		num_list = 5
-		self.assertEqual(calculate_total(num_list), 2)
+		num_list = [5]
+		self.assertEqual(calculate_total(num_list), 5)
 
 
 
